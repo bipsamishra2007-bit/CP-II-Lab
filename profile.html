@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Expense Tracker - Profile</title>
+
+    <link rel="stylesheet" href="profile.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#facc15">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Profile Card -->
+
+    <div class="profile-card">
+
+        <div class="avatar">
+            👤
+        </div>
+
+        <h2 id="userName">Guest</h2>
+
+        <p>Track your expenses and achieve your savings goals!</p>
+
+    </div>
+
+    <!-- Information Card -->
+
+    <div class="info-card">
+
+        <div class="info">
+            <span>Total Expenses</span>
+            <h3 id="totalExpenses">0</h3>
+        </div>
+
+        <div class="info">
+            <span>Total Amount</span>
+            <h3 id="totalAmount">₹0</h3>
+        </div>
+
+        <div class="info">
+            <span>Highest Expense</span>
+            <h3 id="highestExpense">₹0</h3>
+        </div>
+
+        <div class="info">
+            <span>Average Expense</span>
+            <h3 id="averageExpense">₹0</h3>
+        </div>
+
+    </div>
+
+    <!-- Logout Button -->
+
+    <button id="logoutBtn" class="logout-btn">
+    
+    </button>
+
+</div>
+
+<!-- Bottom Navigation -->
+
+<nav>
+
+    <button onclick="location.href='index.html'">
+        🏠<br>Home
+    </button>
+
+    <button onclick="location.href='stats.html'">
+        📊<br>Stats
+    </button>
+
+    <button class="active">
+        👤<br>Profile
+    </button>
+
+</nav>
+
+<script src="profile.js"></script>
+
+</body>
+</html>

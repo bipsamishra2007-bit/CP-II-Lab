@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Expense Tracker - Profile</title>
+
+    <link rel="stylesheet" href="login.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#facc15">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<script>
+if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("service-worker.js");
+}
+</script>
+
+<body>
+
+<div class="container">
+
+    <div class="login-box">
+
+        <h1>💰 Expense Tracker</h1>
+
+        <p>Track Every Rupee, Save More Every Day</p>
+
+        <form id="loginForm">
+
+            <input
+                type="text"
+                id="username"
+                placeholder="Enter Username"
+                required
+            >
+
+            <input
+                type="password"
+                id="password"
+                placeholder="Enter Password"
+                required
+            >
+
+            <button type="submit">
+                Login
+            </button>
+
+        </form>
+
+        <div class="or">
+            OR
+        </div>
+
+        <button class="guest-btn" id="guestBtn">
+            Continue as Guest
+        </button>
+
+    </div>
+
+</div>
+
+<script src="login.js"></script>
+
+</body>
+</html>

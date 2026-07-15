@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Expense Tracker - Profile</title>
+
+    <link rel="stylesheet" href="stat.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#facc15">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+
+
+<body>
+
+<div class="container">
+
+    <header>
+        <h2>📊 Expense Statistics</h2>
+        <p>Your spending overview</p>
+    </header>
+
+    <div class="stats-grid">
+
+        <div class="card">
+            <h3 id="totalExpenses">0</h3>
+            <p>Total Expenses</p>
+        </div>
+
+        <div class="card">
+            <h3 id="totalAmount">₹0</h3>
+            <p>Total Amount</p>
+        </div>
+
+        <div class="card">
+            <h3 id="highestExpense">₹0</h3>
+            <p>Highest Expense</p>
+        </div>
+
+        <div class="card">
+            <h3 id="averageExpense">₹0</h3>
+            <p>Average Expense</p>
+        </div>
+
+    </div>
+
+    <div class="progress-card">
+
+        <h3>Spending Summary</h3>
+
+        <div class="progress-bar">
+            <div class="progress" id="progress"></div>
+        </div>
+
+        <p id="progressText">₹0 Spent</p>
+
+    </div>
+
+</div>
+
+<!-- Bottom Navigation -->
+
+<nav>
+
+    <button onclick="location.href='index.html'">
+        🏠<br>Home
+    </button>
+
+    <button class="active">
+        📊<br>Stats
+    </button>
+
+    <button onclick="location.href='profile.html'">
+        👤<br>Profile
+    </button>
+
+</nav>
+
+<script src="stats.js"></script>
+
+</body>
+</html>
+
